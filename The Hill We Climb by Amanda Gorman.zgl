@@ -1,6 +1,7 @@
 Gorman = /person/Amanda_Gorman;
 The_Hill_We_Climb = /poetry/Amanda_Gorman/The_Hill_We_Climb;
 recitation = /recitation/The_Hill_We_Climb/2021;
+CNN_link = https://www.cnn.com/2021/01/20/politics/amanda-gorman-inaugural-poem-transcript/index.html;
 
 + {
 	from The_Hill_We_Climb,	
@@ -18,7 +19,14 @@ recitation {
 	event /event/2021/USA/Presidential_Inauguration,
 	date 2021-January-20,
 	where /place/USA/Washington_DC,
-	poem """
+};
+
+The_Hill_We_Climb {
+	title "The Hill We Climb",
+	poet /person/Amanda_Gorman,
+	tag /honors/US_Youth_Poet_Laureate,
+	source: CNN_link,
+	text """
 		When day comes we ask ourselves,
 		where can we find light in this never-ending shade?
 		The loss we carry,
@@ -130,13 +138,6 @@ recitation {
 		if only we're brave enough to see it
 		If only we're brave enough to be it
 	""",
-	source: https://www.cnn.com/2021/01/20/politics/amanda-gorman-inaugural-poem-transcript/index.html,
-};
-
-The_Hill_We_Climb {
-	title "The Hill We Climb",
-	poet /person/Amanda_Gorman,
-	tag /honors/US_Youth_Poet_Laureate,
 };
 
 Gorman {
@@ -147,10 +148,10 @@ Gorman {
 (Gorman age 22) as_of 2021-Jan-20;
 
 + {
-	url https://www.cnn.com/2021/01/20/politics/amanda-gorman-inaugural-poem-transcript/index.html,
+	url CNN_link,
 	title "READ: Youth poet laureate Amanda Gorman's inaugural poem",
 	updated 2021-Jan-20,
-	about /recitation/The_Hill_We_Climb/2021,
+	about recitation,
 	content """
 		READ: Youth poet laureate Amanda Gorman's inaugural poem
 		
